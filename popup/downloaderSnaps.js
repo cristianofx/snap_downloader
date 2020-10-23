@@ -10,7 +10,7 @@ var popup = document.getElementById("downloader-popup-content");
 * Just log the error to the console.
 */
 function reportError(error) {
-  console.error(`Could not beastify: ${error}`);
+  console.error(`Could not work: ${error}`);
 }
 
 

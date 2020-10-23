@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "DownloaderSnaps",
+  "version": "1.0",
+  "description": "Downloads mp3",
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+  "browser_action": {
+    "default_icon": "icons/iconfinder_Download_728930.png",
+    "theme_icons": [
+      {
+        "light": "icons/iconfinder_Download_728930.png",
+        "dark": "icons/iconfinder_Download_728930.png",
+        "size": 32
+      }
+    ],
+    "default_title": "DownloaderSnaps",
+    "default_popup": "popup/downloaderSnaps.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.soundsnap.com/*"
+      ],
+      "js": [
+        "content_scripts/content.js"
+      ]
+    }
+  ]
+}

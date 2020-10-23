@@ -1,0 +1,24 @@
+html, body {
+  width: 300px;
+}
+
+.hidden {
+  display: none;
+}
+
+.button {
+  margin: 1% auto;
+  padding: 2px;
+  text-align: center;
+  font-size: 1em;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.dowbload-button:hover {
+  background-color: #CFF2F2;
+}
+
+.dowbload-button {
+  background-color: #E5F2F2;
+}

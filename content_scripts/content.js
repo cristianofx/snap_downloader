@@ -15,7 +15,7 @@
 	var list = document.getElementsByTagName("script");
 
 	/**
-	* Creates the songElements array, parses the scripts for the name and html for the song
+	* Creates the songElements array, parses the scripts for the name and src for the song
 	*/
 	let songElements = [];
 	for (i = 0; i < list.length; i++) {

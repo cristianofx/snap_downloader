@@ -20,13 +20,13 @@
 	let songElements = [];
 	for (i = 0; i < list.length; i++) {
 		var src = list[i].innerHTML;
-		if (src.includes("wavesurfer[eq].backend.song")) {
-			let regexp = new RegExp("(?<=.backend.song = \").*(?=\";)");
+		if (src.includes("audioWave.init({")) {
+			let regexp = new RegExp("(?<=song: \").*(?=\")");
 			var textinner = list[i].innerHTML
 			var result = textinner.match(regexp);
-			var regex2 = new RegExp("(?<=\<span class='jp-title'\>).*(?=\<\/span\>)");
+			var regex2 = new RegExp("(?<=title: \").*(?=\")");
 			var name = textinner.match(regex2);
-			var obj = { "name": name[0], "src": result[0] }
+			var obj = { "name": name[0], "src": "https://www.soundsnap.com" + result[0] }
 			songElements.push(obj);
 		}
 	}
